@@ -1,0 +1,10 @@
+public class Site {
+    protected double _units;
+    protected double _rate;
+    public static final double TAX_RATE = 0.13;
+
+    public Site(double _units, double _rate){
+        this._units = _units;
+        this._rate = _rate;
+    }
+}
