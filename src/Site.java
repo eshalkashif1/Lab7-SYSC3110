@@ -8,6 +8,10 @@ public abstract class Site {
         this._rate = _rate;
     }
 
+    public double getBillableAmount(){
+        return getBaseAmount() + getTaxAmount();
+    }
+
     protected abstract double getTaxAmount();
 
     protected abstract double getBaseAmount();
